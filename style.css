@@ -1,0 +1,105 @@
+body {
+  background-color: #f9f2e6;
+  margin: 25px;
+  padding-left: 1cm;
+}
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+.menu {
+  position: absolute;
+  top: 1ch;
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: 20ch 25ch 25ch;
+  font-size: 10px;
+}
+
+.title {
+  position: absolute;
+  left: 140px;
+  top: 5px;
+  padding-left: 400px;
+  color: #0008c6;
+}
+p {
+  font-family: "Sligoil";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #0008c6;
+}
+.intro-text {
+  padding-top: 1cm;
+  max-width: 25cm;
+}
+
+.student-groups {
+  margin-top: 160px;
+  font-family: "Sligoil";
+  font-weight: 100;
+  line-height: 80px;
+  font-size: 33px;
+  color: #c83636;
+  text-align: center;
+  transform: rotate(-10deg);
+  background-color: #fbf374;
+  height: 80px;
+  width: 300px;
+}
+.student-groups:hover,
+.student-groups:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.spin-on-hover {
+  position: relative;
+  max-width: fit-content;
+  top: 0px;
+  bottom: 700px;
+  left: 600px;
+  right: 0;
+  transition: transform 0.9s ease;
+}
+.spin-on-hover:hover {
+  transform: rotate(360deg);
+}
+.container {
+  display: flex;
+}
+
+.panel {
+  position: fixed;
+  right: 0px;
+  top: 0;
+  height: 100%;
+  width: 350px; /* set initial width */
+  /* my code */
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 1056px;
+  height: 1044px;
+  left: 1148px;
+  top: 0px;
+
+  background: #fdeae5;
+  border-width: 0px 3px;
+  border-style: solid;
+  border-color: #000000;
+  /* my code */
+  transform: translateX(200px); /* hide panel initially */
+  transition: transform 0.3s ease-out; /* animate transform on hover */
+}
+
+.panel:hover {
+  transform: translateX(-100%); /* slide panel out on hover */
+}
+
+.content {
+  flex: 1;
+  font-size: 30px;
+}
