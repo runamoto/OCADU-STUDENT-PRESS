@@ -98,7 +98,7 @@ p {
   transform: translateX(85vw); /* slide panel out on hover */
 }
 
-.css-class-i-added-to-transform {
+.out {
   /* instead of doing % you can do the exact amount you set the panel to be. You can later set it to 100vw which would be the width of the screen */
   /* ok i changed it to vw, you can change it back if you want */
   transform: translateX(0) !important;
