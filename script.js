@@ -3,7 +3,7 @@
 // https://www.are.na/aaryan-pashine/models-of-conversation
 // the slug is models-of-conversation
 // So go ahead and pass that to the class, you will have to add a / in the end cuz I coded it poorly
-let client = new Arena("models-of-conversation/"); //<---
+let client = new Arena("ocadu-minful-campus/"); //<---
 
 // Now to use it there are a bunch of things you can do with the wrapper
 // so if i say client.texts() it will basically get me all the blocks in the channel that are texts, similarly to get all the images i would say client.images() and so on
@@ -31,6 +31,20 @@ client.texts().then((blocks) => {
   }
 });
 
+client.texts().then((blocks) => {
+  for (const block of blocks) {
+    $(".panel").append(`
+        <div>
+          ${block.content}
+          <p style="
+          font-style: normal;
+              width: 200px">
+            Added by ${block.connected_by_username}</p>
+        </div>
+      `);
+  }
+});
+
 // Bonus
 $(".panel").on("click", () => {
   $(".panel").toggleClass("css-class-i-added-to-transform");
@@ -51,3 +65,11 @@ $(".panel").on("click", () => {
 //     `);
 //   }
 // });
+
+client.images().then((blocks) => {
+  for (const block of blocks) {
+    $(".panel").append(
+      `<img class="article-img" src=${block.image.original.url}></img>`
+    );
+  }
+});
