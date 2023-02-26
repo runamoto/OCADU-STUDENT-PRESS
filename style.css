@@ -80,7 +80,7 @@ p {
   box-sizing: border-box;
   position: absolute;
   width: 100vw;
-  height: 200vh;
+  height: 400vh;
   left: 0px;
   top: 0px;
   padding-left: 70px;
@@ -109,7 +109,3 @@ p {
   font-size: 30px;
 }
 
-.article-img {
-  width: 500px;
-  padding-right: 20px;
-}

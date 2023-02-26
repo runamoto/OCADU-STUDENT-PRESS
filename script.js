@@ -1,4 +1,4 @@
-let client = new Arena("ocadu-minful-campus/");
+let client = new Arena("ocadu-mindful-campus/");
 const blocks = $(".panel");
 
 client.allContent().then((content) => setupContent(content));
@@ -37,8 +37,9 @@ function setupContent(data) {
 
     if (item.title == "stylesheet") {
       var css = item.content,
-        head = document.head || document.getElementsByTagName("head")[0],
+        head = document.getElementsByTagName("head")[0],
         style = document.createElement("style");
+      console.log(head);
 
       head.appendChild(style);
 
