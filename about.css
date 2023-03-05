@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "sligoli";
+  src: url(fonts/Sligoil-Micro.otf);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #f9f2e6;
+  margin: 0px;
+  padding-left: 0px;
+  padding: 0px 2%;
+}
+p {
+  position: relative;
+  top: 200px;
+  font-family: sligoli;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 33px;
+  color: #0008c6;
+}
+.spin-on-hover {
+  position: relative;
+  width: 30px;
+  top: 10px;
+  transition: transform 0.9s ease;
+}
+
+.spin-on-hover:hover {
+  transform: rotate(360deg);
+}

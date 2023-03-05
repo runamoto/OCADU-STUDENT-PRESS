@@ -2,7 +2,9 @@
 
 #### TODO
 
-- [ ] Add fonts as files to the project and reference them in the css
+- [done] Add fonts as files to the project and reference them in the css
+- [ ] Fix the glitch in the hover animation
+- [ ] Make pages for the menu options
 - [ ] Figure out how to get stuff from Are.na
 
 #### Questions to consider
